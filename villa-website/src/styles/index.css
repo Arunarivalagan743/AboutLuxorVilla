@@ -1,0 +1,144 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --charcoal: #2C2C2C;
+    --pure-white: #FFFFFF;
+    --silver-gray: #CCCCCC;
+    --jet-black: #000000;
+    --dim-gray: #666666;
+    --light-gray: #F4F4F4;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--pure-white);
+    color: var(--charcoal);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background-image: url('../assets/images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(44, 44, 44, 0.6);
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.timeline-line {
+    width: 2px;
+    background-color: var(--silver-gray);
+}
+
+.timeline-marker {
+    background-color: var(--jet-black);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.personal-intro {
+    display: flex;
+    align-items: center;
+}
+
+.personal-intro img {
+    border-radius: 50%;
+    filter: grayscale(100%);
+}
+
+.split-layout {
+    display: flex;
+}
+
+.split-layout .info-block {
+    background-color: var(--light-gray);
+    color: var(--charcoal);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.mission-vision-card {
+    border: 1px solid var(--silver-gray);
+    padding: 20px;
+    background-color: var(--pure-white);
+}
+
+.team-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.testimonials {
+    background-color: var(--light-gray);
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.call-to-action {
+    display: flex;
+    gap: 10px;
+}
+
+.call-to-action button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.call-to-action .button-black {
+    background-color: var(--jet-black);
+    color: var(--pure-white);
+}
+
+.call-to-action .button-white {
+    background-color: var(--pure-white);
+    border: 1px solid var(--charcoal);
+    color: var(--charcoal);
+}
+
+.call-to-action .button-black:hover {
+    background-color: transparent;
+    border: 1px solid var(--jet-black);
+}
+
+.call-to-action .button-white:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
