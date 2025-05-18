@@ -4,11 +4,11 @@
   "description": "A luxurious villa website showcasing the villa's features, team, and testimonials.",
   "main": "src/main.jsx",
   "scripts": {
-  "dev": "vite",
-  "build": "npx vite build",
-  "serve": "vite preview",
-  "postinstall": "chmod +x node_modules/.bin/vite"
-}
+    "dev": "vite",
+    "build": "npx vite build",
+    "serve": "vite preview",
+    "postinstall": "chmod +x node_modules/.bin/vite"
+  },
   "keywords": [
     "villa",
     "website",
